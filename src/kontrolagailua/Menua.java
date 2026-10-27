@@ -7,7 +7,6 @@ import businesslogic.Fakturak;
 import eredua.Langilea;
 import eredua.Bezeroa;
 import eredua.Eskaria;
-import eredua.EskariLerroa;
 import ikuspegia.Kontsola;
 import businesslogic.Fitxategiak;
 
