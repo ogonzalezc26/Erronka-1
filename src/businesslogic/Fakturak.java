@@ -2,12 +2,15 @@ package businesslogic;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.util.TreeMap;
 import eredua.Eskaria;
 import eredua.EskariLerroa;
 import ikuspegia.Kontsola;
 
 public class Fakturak {
+	private static String bidea = "src/datuak/";
+	public static String fakturak = bidea + "FAKTURA.txt";
 
 	private String fitxategiIzena;
 
@@ -72,5 +75,15 @@ public class Fakturak {
 		sb.append(String.format("%nGUZTIRA: %.2f%n", totala));
 
 		Kontsola.imprimatu(sb.toString());
+		idatzi(fakturak, sb.toString());
+	}
+
+	public boolean idatzi(String bidea, String testua) {
+		try (FileWriter fw = new FileWriter(bidea)) {
+			fw.write(testua);
+			return true;
+		} catch (Exception e) {
+			return false;
+		}
 	}
 }

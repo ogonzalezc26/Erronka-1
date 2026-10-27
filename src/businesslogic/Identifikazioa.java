@@ -4,8 +4,8 @@ import ikuspegia.Kontsola;
 import kontrolagailua.Teklatua;
 
 public class Identifikazioa {
-	private static String Erabiltzailea = "admin";
-	private static String Pasahitza = "1234";
+	private static final String Erabiltzailea = "admin";
+	private static final String Pasahitza = "1234";
 
 	public Identifikazioa() {
 	}
