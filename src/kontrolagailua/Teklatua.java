@@ -13,7 +13,7 @@ public class Teklatua {
 	public static Integer irakurriZenbakia() {
 		Integer zenbakia = null;
 		while (zenbakia == null) {
-			try {	
+			try {
 				zenbakia = Integer.valueOf(sc.nextLine().trim());
 			} catch (NumberFormatException e) {
 				ikuspegia.Kontsola.imprimatu("Zenbaki baliogabea, saiatu berriro:");

@@ -55,15 +55,6 @@ public class Menua {
 		} while (irten == false);
 	}
 
-	public static boolean saioaItxi() {
-		String erantzuna;
-		do {
-			Kontsola.imprimatu("Saioa itxi nahi duzu? (bai/ez)");
-			erantzuna = Teklatua.irakurri().trim().toLowerCase();
-		} while (!erantzuna.equals("bai") && !erantzuna.equals("ez"));
-		return erantzuna.equals("bai");
-	}
-
 	// LANGILEAK
 	public void langileakMenua() {
 		boolean atzera = false;
@@ -234,5 +225,14 @@ public class Menua {
 				Kontsola.imprimatu("Aukera okerra.");
 			}
 		} while (atzera == false);
+	}
+
+	public static boolean saioaItxi() {
+		String erantzuna;
+		do {
+			Kontsola.imprimatu("Saioa itxi nahi duzu? (bai/ez)");
+			erantzuna = Teklatua.irakurri().trim().toLowerCase();
+		} while (!erantzuna.equals("bai") && !erantzuna.equals("ez"));
+		return erantzuna.equals("bai");
 	}
 }

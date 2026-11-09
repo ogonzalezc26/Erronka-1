@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.TreeMap;
 import eredua.Bezeroa;
 import eredua.Eskaria;
-import eredua.EskariLerroa;
 import ikuspegia.Kontsola;
 
 public class BezeroFitxategia {
