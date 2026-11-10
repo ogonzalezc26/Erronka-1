@@ -9,9 +9,6 @@ import eredua.EskariLerroa;
 import ikuspegia.Kontsola;
 
 public class Fakturak {
-	private static String bidea = "src/datuak/";
-	public static String fakturak = bidea + "FAKTURA.txt";
-
 	private String fitxategiIzena;
 
 	// ID_ESKARI:
@@ -67,7 +64,7 @@ public class Fakturak {
 		double totala = 0;
 		for (EskariLerroa l : lerroak.values()) {
 			double prezioa = l.getKopurua() * l.getSalneurria();
-			totala += prezioa;
+			totala = prezioa + totala;
 			sb.append(String.format("%-10d %-12s %-10d %-12.2f %-12.2f%n", l.getEskariZenbakia(), l.getProduktua(),
 					l.getKopurua(), l.getSalneurria(), prezioa));
 		}
@@ -75,10 +72,10 @@ public class Fakturak {
 		sb.append(String.format("%nGUZTIRA: %.2f%n", totala));
 
 		Kontsola.imprimatu(sb.toString());
-		idatzi(fakturak, sb.toString());
+		idatzi(Fitxategiak.faktura, sb.toString());
 	}
 
-	public boolean idatzi(String bidea, String testua) {
+	public static boolean idatzi(String bidea, String testua) {
 		try (FileWriter fw = new FileWriter(bidea)) {
 			fw.write(testua);
 			return true;

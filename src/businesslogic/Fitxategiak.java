@@ -2,7 +2,6 @@ package businesslogic;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.io.FileWriter;
 
 public class Fitxategiak {
 
@@ -13,6 +12,7 @@ public class Fitxategiak {
 	public static String bezero_telefonoa = bidea + "BEZERO_TELEFONOAK.txt";
 	public static String eskaria = bidea + "ESKARIAK.txt";
 	public static String eskari_lerroa = bidea + "ESKARI_LERROAK.txt";
+	public static String faktura = bidea + "FAKTURA.txt";
 
 	public static String getBidea() {
 		return bidea;
@@ -29,14 +29,5 @@ public class Fitxategiak {
 			return "Errorea fitxategia irakurtzean: " + e.toString();
 		}
 		return sb.toString();
-	}
-
-	public static boolean idatzi(String bidea, String testua) {
-		try (FileWriter fw = new FileWriter(bidea)) {
-			fw.write(testua);
-			return true;
-		} catch (Exception e) {
-			return false;
-		}
 	}
 }
