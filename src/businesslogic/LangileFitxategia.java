@@ -97,9 +97,9 @@ public class LangileFitxategia {
 
 	public void langilearenInformazioaInprimatu(Langilea l) {
 		Kontsola.imprimatu("");
-		Kontsola.imprimatu("ID           : " + l.getId());
-		Kontsola.imprimatu("Izen-abizena : " + l.getIzena() + " " + l.getAbizena());
-		Kontsola.imprimatu("Telefonoa    : " + l.getTelefonoa());
+		Kontsola.imprimatu("ID           	: " + l.getId());
+		Kontsola.imprimatu("Izen-abizena 	: " + l.getIzena() + " " + l.getAbizena());
+		Kontsola.imprimatu("Telefonoa    	: " + l.getTelefonoa());
 		Kontsola.imprimatu("Kontratazio-Data   : " + l.getKontratazioaData());
 		Kontsola.imprimatu("");
 	}
@@ -132,3 +132,17 @@ public class LangileFitxategia {
 		Kontsola.imprimatu("");
 	}
 }
+/*
+	public void langilearenInformazioaInprimatu(Langilea l) {
+	String testo = String.format(
+			"%n%-18s: %s%n
+			%-18s: %s %s%n
+			%-18s: %s%n
+			%-18s: %s%n",
+			"ID", l.getId(),
+			"Izen-abizena", l.getIzena(), l.getAbizena(),
+			"Telefonoa", l.getTelefonoa(),
+			"Kontratazio-Data", l.getKontratazioaData());	
+	Kontsola.imprimatu(testo);
+}
+*/
