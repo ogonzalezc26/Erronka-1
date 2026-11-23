@@ -4,7 +4,7 @@ import ikuspegia.Kontsola;
 
 public class Logoa {
 	public static void erakutsi() {
-		erakutsi(7);
+		erakutsi(8);
 	}
 
 	public static void erakutsi(int zabalera) {

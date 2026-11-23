@@ -97,10 +97,10 @@ public class LangileFitxategia {
 
 	public void langilearenInformazioaInprimatu(Langilea l) {
 		Kontsola.imprimatu("");
-		Kontsola.imprimatu("ID           	: " + l.getId());
-		Kontsola.imprimatu("Izen-abizena 	: " + l.getIzena() + " " + l.getAbizena());
-		Kontsola.imprimatu("Telefonoa    	: " + l.getTelefonoa());
-		Kontsola.imprimatu("Kontratazio-Data   : " + l.getKontratazioaData());
+		Kontsola.imprimatu("ID           		: " + l.getId());
+		Kontsola.imprimatu("Izen-abizena 		: " + l.getIzena() + " " + l.getAbizena());
+		Kontsola.imprimatu("Telefonoa			: " + l.getTelefonoa());
+		Kontsola.imprimatu("Kontratazio-Data	: " + l.getKontratazioaData());
 		Kontsola.imprimatu("");
 	}
 
