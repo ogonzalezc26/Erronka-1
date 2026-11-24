@@ -43,8 +43,7 @@ public class LangileFitxategia {
 		langileakIdz.clear();
 		langileakNagusiz.clear();
 		try {
-			FileReader fr = new FileReader(fitxategiIzena);
-			BufferedReader br = new BufferedReader(fr);
+			BufferedReader br = Fitxategiak.irakurgailua(fitxategiIzena);
 			br.readLine();
 			do {
 				String lerroa = br.readLine();
@@ -71,7 +70,6 @@ public class LangileFitxategia {
 						l);
 			} while (true);
 			br.close();
-			fr.close();
 		} catch (Exception e) {
 			Kontsola.imprimatu("Errorea fitxategia irakurtzean: " + e.toString());
 		}

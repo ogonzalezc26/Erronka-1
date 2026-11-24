@@ -35,7 +35,7 @@ public class BezeroFitxategia {
 	// BEZEROAK: ID, IZENA, ABIZENA, HELBIDEA, EMAILA
 	private void bezeroakIrakurri() {
 		try {
-			BufferedReader br = new BufferedReader(new FileReader(bezeroFitxategia));
+			BufferedReader br = Fitxategiak.irakurgailua(bezeroFitxategia);
 			br.readLine();
 			String lerroa;
 			while ((lerroa = br.readLine()) != null) {
@@ -63,7 +63,7 @@ public class BezeroFitxategia {
 	// BEZERO_TELEFONOAK: ID, ID_BEZERO, ZENBAKIA
 	private void telefonoakIrakurri() {
 		try {
-			BufferedReader br = new BufferedReader(new FileReader(telefonoFitxategia));
+			BufferedReader br = Fitxategiak.irakurgailua(telefonoFitxategia);
 			br.readLine();
 			String lerroa;
 			while ((lerroa = br.readLine()) != null) {
@@ -120,7 +120,7 @@ public class BezeroFitxategia {
 	// ESKARIAK: ID, ID_BEZERO, ID_EGOERA, ESKAERA_DATA
 	private void eskariakIrakurri() {
 		try {
-			BufferedReader br = new BufferedReader(new FileReader(eskariFitxategia));
+			BufferedReader br = Fitxategiak.irakurgailua(eskariFitxategia);
 			br.readLine();
 			String lerroa;
 			while ((lerroa = br.readLine()) != null) {

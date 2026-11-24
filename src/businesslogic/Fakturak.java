@@ -22,7 +22,7 @@ public class Fakturak {
 	public void fitxategiaIrakurri() {
 		lerroakEskarika.clear();
 		try {
-			BufferedReader br = new BufferedReader(new FileReader(fitxategiIzena));
+			BufferedReader br = Fitxategiak.irakurgailua(fitxategiIzena);
 			br.readLine();
 			String lerroa;
 			while ((lerroa = br.readLine()) != null) {
